@@ -1,0 +1,110 @@
+/*   DiaryEditor  */
+.ncs {
+  text-align: center;
+}
+
+.DiaryEditor {
+  text-align: center;
+  padding: 20px;
+}
+
+.DiaryEditor input,
+.DiaryEditor textarea,
+.DiaryEditor select {
+  border: 2px solid skyblue;
+  border-radius: 10px;
+}
+
+.DiaryEditor input,
+.DiaryEditor textarea {
+  font-weight: bold;
+  margin-bottom: 20px;
+  width: 500px;
+  padding: 10px;
+}
+
+.DiaryEditor textarea {
+  height: 150px;
+}
+
+.DiaryEditor select {
+  margin-bottom: 30px;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+}
+
+.DiaryEditor button {
+  width: 500px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* DiaryList */
+
+.DiaryList {
+  padding: 50px;
+}
+
+.DiaryList h2 {
+  text-align: center;
+}
+
+.DiaryList h5 {
+  text-align: right;
+  margin-right: 25%;
+  margin-bottom: 60px;
+}
+
+/* DiaryItem */
+
+.DiaryItem {
+  border: 2px solid rgba(10, 161, 236, 0.5);
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 24px;
+  width: 50%;
+  margin: 50px auto;
+  background-color: rgba(130, 203, 239, 0.058);
+}
+
+.DiaryItem .info {
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px;
+}
+
+.DiaryItem .info .authorAndEmotion {
+  font-weight: bold;
+}
+
+.DiaryItem .info .date {
+  margin-top: 5px;
+  color: grey;
+}
+
+.DiaryItem .content {
+  padding: 30px 0;
+}
+
+.DiaryItem .buttons {
+  text-align: right;
+}
+
+.DiaryItem .buttons .modify,
+.DiaryItem .buttons .remove,
+.DiaryItem .buttons .modifyConfirm,
+.DiaryItem .buttons .modifyCancle {
+  margin: 2px;
+  padding: 4px 10px;
+  background-color: rgba(135, 207, 235, 0.251);
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.DiaryItem .content .modifyBox {
+  border: 1px solid rgba(151, 55, 138, 0.838);
+  border-radius: 7px;
+  height: 90%;
+  font-weight: bold;
+  width: 80%;
+}
