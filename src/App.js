@@ -24,15 +24,28 @@ function App() {
   };
 
   const removeItem = (id) => {
-    // 원래배열에서 해당 id의 일기 삭제 후 data에 재할당
     setData(data.filter((item) => item.id !== id));
+  };
+
+  const modifyItem = (modifyId, modifiedContent) => {
+    // data 배열의 각 객체중에 수정버튼을 누른 id와 같은 객체를 찾아서
+    // content의 value를 modified로 변경 후 다시 data에 넣어줌
+    setData(
+      data.map((it) =>
+        it.id === modifyId ? { ...it, content: modifiedContent } : it
+      )
+    );
   };
 
   return (
     <div className="App">
       <DiaryEditor addItem={addItem} />
       <hr width="80%" />
-      <DiaryList diaryList={data} removeItem={removeItem} />
+      <DiaryList
+        diaryList={data}
+        removeItem={removeItem}
+        modifyItem={modifyItem}
+      />
     </div>
   );
 }
