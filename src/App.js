@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import "./App.css";
+import Lifecycle from "./Lifecycle";
 import DiaryEditor from "./DiaryEditor";
 import DiaryList from "./DiaryList";
 
@@ -39,6 +40,7 @@ function App() {
 
   return (
     <div className="App">
+      <Lifecycle />
       <DiaryEditor addItem={addItem} />
       <hr width="80%" />
       <DiaryList
