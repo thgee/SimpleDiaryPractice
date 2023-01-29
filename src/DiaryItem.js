@@ -31,7 +31,6 @@ const DiaryItem = ({
     setIsModify(false);
   };
 
-  console.log(modifiedContent);
   return (
     <div className="DiaryItem">
       <div className="info">

@@ -7,7 +7,7 @@ const DiaryEditor = ({ addItem }) => {
   const [state, setState] = useState({
     author: "",
     content: "",
-    emotion: "😄",
+    emotion: "1",
   });
 
   const handleChangeState = (e) => {
@@ -29,7 +29,7 @@ const DiaryEditor = ({ addItem }) => {
     }
 
     addItem(state.author, state.content, state.emotion);
-    setState({ author: "", content: "", emotion: "😄" });
+    setState({ author: "", content: "", emotion: "1" });
   };
 
   return (
@@ -60,9 +60,11 @@ const DiaryEditor = ({ addItem }) => {
           value={state.emotion}
           onChange={handleChangeState}
         >
-          <option value={"😄"}>😄</option>
-          <option value={"😢"}>😢</option>
-          <option value={"😡"}>😡</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
         </select>
       </div>
       <div>

@@ -50,10 +50,11 @@
   text-align: center;
 }
 
-.DiaryList h5 {
+.DiaryList h4 {
   text-align: right;
   margin-right: 25%;
   margin-bottom: 60px;
+  margin-top: 60px;
 }
 
 /* DiaryItem */
