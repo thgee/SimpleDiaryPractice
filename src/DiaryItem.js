@@ -46,6 +46,7 @@ const DiaryItem = ({
             className="modifyBox"
             value={modifiedContent}
             onChange={(e) => setModifiedContent(e.target.value)}
+            rows="5"
           />
         ) : (
           content

@@ -85,6 +85,7 @@
 
 .DiaryItem .content {
   padding: 30px 0;
+  box-sizing: border-box;
 }
 
 .DiaryItem .buttons {
@@ -105,7 +106,6 @@
 .DiaryItem .content .modifyBox {
   border: 1px solid rgba(151, 55, 138, 0.838);
   border-radius: 7px;
-  height: 90%;
-  font-weight: bold;
-  width: 80%;
+  font-size: 1rem;
+  width: 100%;
 }

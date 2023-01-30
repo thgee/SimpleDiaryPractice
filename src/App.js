@@ -2,6 +2,7 @@ import { useState, useRef, useEffect, useMemo } from "react";
 import "./App.css";
 import DiaryEditor from "./DiaryEditor";
 import DiaryList from "./DiaryList";
+import Optimize from "./Optimize";
 
 function App() {
   const [data, setData] = useState([]);
@@ -24,7 +25,9 @@ function App() {
 
     setData(initData);
   };
-  useEffect(() => getData, []);
+  useEffect(() => {
+    getData();
+  }, []);
 
   const addItem = (author, content, emotion) => {
     const created_date = new Date();
@@ -54,8 +57,6 @@ function App() {
   };
 
   const getDiaryAnalysis = useMemo(() => {
-    console.log(`분석 시작`);
-
     const goodCount = data.filter((it) => it.emotion >= 3).length;
 
     const badCount = data.length - goodCount;
@@ -68,6 +69,8 @@ function App() {
 
   return (
     <div className="App">
+      <Optimize />
+
       <DiaryEditor addItem={addItem} />
       <hr width="80%" />
       <div>전체일기 : {data.length}</div>
